@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd' />
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='tr' lang='tr'/>
+<head>
+	<title>Jquery</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-9' />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"> </script>
+	<script type="text/javascript">
+	$(function(){
+			$("a").click(function(){
+			
+				alert("linke bastın") 	;
+			
+			
+			
+			});
+			$("span").css("color","red");
+			$(".farkli").css("color","black")
+			$("#yeni").css("color","purple");
+			$("input[name=kullanici]").css("border","6px solid #333");
+			$("img").click(function(){
+				alert("büyümüyor bu resim")
+			
+			
+			})
+	
+	});
+	</script>
+	
+</head>
+<body>
+<a href="#">Süleyman Kabadayi</a><br>
+<span>bu alan <span id="yeni">alooo </span>spanlı farklı   yazıldı</span>
+<input type="text" name="kullanici"> 
+<input type="text" name="sifre"> 
+ <img  src="al1"><br><br><br><br><br><br><br>
+ <img  src="al2">
+
+
+</body>
+</html>

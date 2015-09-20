@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Süleyman Kabadayi  |   Web-Sitesi</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	
+		var text="Sitede Arama Yap";
+		$(".ara).attr("value",text).focus(function(){
+	
+			$(this).attr("value","");
+			
+	
+	
+		}).blur(function(){
+		
+		
+			$(this).attr("value",text);
+		
+		});
+	
+	
+	};
+
+
+</script>
+<style type="text/css">
+	.ara{border:8px solid #369;padding:5px;width:250px;float:right;margin-top:100px}
+	:focus{outline:none}                                        
+
+</style>
+</head>
+<body>
+<input type="text" name="ara" class="ara"/>
+
+</body>
+</html>

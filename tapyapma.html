@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>jQuery dersleri - ibrahim çevrük</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#alanim div").hide();
+		
+		$("#alanim span").toggle(function(){
+			
+			var index	= $("#alanim span").index(this);
+			$("#alanim div:eq("+index+")").slideDown("show");
+			$(this).css("background-color","yellow");
+
+		},
+		
+		function(){
+		
+			var index	= $("#alanim span").index(this);
+			$("#alanim div:eq("+index+")").slideUp("show");
+			$(this).css("background-color","#369");
+		
+		});
+	
+	});
+	</script>
+	<style type="text/css">
+	#alanim{float:left;width:500px; padding:10px}
+	#alanim span{float: left; width:500px; background-color:#369; padding:10px; cursor:pointer;color: #fff;margin: 3px 0 0 0}
+	#alanim div{float:left; width:500px; background-color:#eee;padding:10px}
+	</style>
+</head>
+<body>
+	<div id="alanim">
+		<span>Bu Alan Başlıktır 1. Kutucuk</span>
+			<div>Burası içeriktir 1</div>
+		<span>Bu Alan Başlıktır 2. Kutucuk</span>
+			<div>Burası içeriktir 2</div>
+		<span>Bu Alan Başlıktır 1. Kutucuk</span>
+			<div>Burası içeriktir 1</div>
+		<span>Bu Alan Başlıktır 2. Kutucuk</span>
+			<div>Burası içeriktir 2</div>
+		<span>Bu Alan Başlıktır 1. Kutucuk</span>
+			<div>Bu dersimizde bu kadar</div>
+
+	</div>
+</body>
+</html>
+	
+	
+	

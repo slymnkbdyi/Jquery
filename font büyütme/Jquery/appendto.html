@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>jQuery dersleri - ibrahim çevrük</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){              <!-- Sayfa Yüklenince demek --!>
+	
+		$("#buton").click(function(){
+			$("p").hide();
+			$(".getir").appendTo("#yazi");      <!--  Sonuna Ekler --!>
+			
+		
+		
+		});
+	
+	
+	
+	
+	
+	
+	});
+
+
+</script>
+<style type="text/css">
+.getir{color:red;margin-left:5px;}
+
+</style>
+</head>
+<body>
+<div id="yazi">  
+
+	Süleyman KABADAYI
+</div>
+<p>  Develi Kayseri</p>
+<p>  Develi Kayseri</p>
+<p>  Develi Kayseri</p>
+<p>  Develi Kayseri</p>
+<p>  Develi Kayseri</p>
+<p>  Develi Kayseri</p>
+<br>
+<span class="getir">Tamam  </class>
+<input type="submit" value="Tamamla" id="buton"> </input>
+
+</body>
+</html>

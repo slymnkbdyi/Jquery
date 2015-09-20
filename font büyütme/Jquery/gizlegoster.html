@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd' />
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='tr' lang='tr'/>
+<head>
+	<title>Gizle-Göster</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-9' />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+	function goster(){
+	$("#kutu").show(100);
+	}
+	function gizle(){
+	$("#kutu").hide(100);
+	}
+	function gizlegoster(){
+	$("#kutu").toggle(100)
+	}
+	
+	</script>
+</head>
+<body>
+<div id="kutu">
+<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/p160x160/1975019_411756312294647_1851638390_n.jpg?oh=069c3787547bf64389290ee78aecc024&oe=548BF718&__gda__=1419211405_33aa6732324d27972d6949216d0b1016" alt=""/>
+</div>
+
+<button Onclick="goster()">Göster<button>
+<button Onclick="gizle()">Gizle<button>
+<button Onclick="gizlegoster()">Gizle/Göster<button>
+</body>
+</html>

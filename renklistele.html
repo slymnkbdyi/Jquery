@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd' />
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='tr' lang='tr'/>
+<head>
+	<title>Renk Listeleme</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-9' />
+	<script type="text/javascript"  src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	
+		for(i=0;i<10;i+=2)
+		{
+			$("#liste li").eq(i).css({        <!--    eq    döndür  demek ---!>
+			
+			
+				color:	"#fff" ,background:	"red"
+			
+			});
+	
+		}
+	
+	});
+	</script>
+	
+	<style type="text/css">
+	ul,li{margin:0 ; padding:0;list-type:none;}
+	body{font: 12px tahoma }
+	#liste li{padding:10px}
+	
+	</style>
+</head>
+<body>
+	<ul id="liste">
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+		<li>Süleyman Kabadayi  |   www.slymnkbdyi.com </li>
+	
+	</ul>
+
+</body>
+</html>
